@@ -26,4 +26,7 @@
     > • You can negate a pattern by starting it with an exclamation point (!)
 15. `git diff <--stagged> `- you want to know exactly what you changed, not just which files were changed. If you want to see what you’ve staged that will go into your next commit, you can use git diff --staged. git diff by itself doesn’t show all changes made since your last commit—only changes that are still unstaged. git diff --cached to see what you’ve staged so far (--staged and --cached are synonyms)
 16. `git difftool` - There is another way to look at these diffs if you prefer a graphical or external diff viewing program instead. If you run git difftool instead of git diff, you can view any of these diffs in software like emerge, vimdiff and many more (including commercial products).
-17. `git rm ` - To remove a file from Git, you have to remove it from your tracked files (more accurately, remove it from your staging area) and then commit.
+17. `git rm ` - To remove a file from Git, you have to remove it from your tracked files (more accurately, remove it from your staging area) and then commit. If you modified the file or
+    had already added it to the staging area, you must force the removal with the -f option.
+18. `git rm --cached <filename>`- you may want to keep the file on your hard drive but not have Git track it anymore. This is particularly useful if you forgot to add something to your .gitignore file and accidentally staged it.
+19. `git mv` - Thus it’s a bit confusing that Git has a mv command. If you want to rename a file in Git.
