@@ -32,7 +32,7 @@
     - mv README.md README
     - git rm README.md
     - git add README
-20. `git log -p --stat --pretty <-n> --graph` - To detect commit history. -p shows the difference introduced in each commit. -n command to limit the commits. --stat is used if you want to see abbreviated stats for each commit.--pretty=online/short/full/fuller/format this option changes the log output to formats other than the default. The oneline value for this option prints each commit on a single line, which is useful if you’re looking at a lot of commits. In addition, the short, full, and fuller values show the output in roughly the same format but with less or more information, respectivel.The most interesting option value is format, which allows you to specify your own log output format. --graph option adds a nice little ASCII graph showing your branch and merge history:
+20. `git log -p --stat --pretty <-n> --graph --since --until --author=<name>` - To detect commit history. -p shows the difference introduced in each commit. -n command to limit the commits. --stat is used if you want to see abbreviated stats for each commit.--pretty=online/short/full/fuller/format this option changes the log output to formats other than the default. The oneline value for this option prints each commit on a single line, which is useful if you’re looking at a lot of commits. In addition, the short, full, and fuller values show the output in roughly the same format but with less or more information, respectivel.The most interesting option value is format, which allows you to specify your own log output format. --graph option adds a nice little ASCII graph showing your branch and merge history. `--since` tag and `--until` tags are self explainatory.`--author` this helps in filter based on the specifi autor. `-S` pickaxe option take a string and show only those commit that changed the number of occurances of that string.
 
 | Specifier | Description of Output                           |
 | --------- | ----------------------------------------------- |
@@ -67,3 +67,7 @@ using the full date format.|
 |--graph| Display an ASCII graph of the branch and merge history beside the log output.|
 |--pretty| Show commits in an alternate format. Option values include oneline, short,full, fuller, and format (where you specify your own format).|
 |--oneline| Shorthand for --pretty=oneline --abbrev-commit used together.|
+
+21.`git commit --ammend`- One of the common undos takes place when you commit too early and possibly forget to add some
+files, or you mess up your commit message. If you want to redo that commit, make the additional
+changes you forgot, stage them, and commit again using the --amend option
