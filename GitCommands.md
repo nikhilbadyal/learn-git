@@ -71,4 +71,6 @@ using the full date format.|
 21.`git commit --ammend`- One of the common undos takes place when you commit too early and possibly forget to add some
 files, or you mess up your commit message. If you want to redo that commit, make the additional
 changes you forgot, stage them, and commit again using the --amend option. The commit made by ammend will be a totally new commit and will replace the previous commit. So it's an ideal thing to only ammed if there are minor variations like typos.
-22. `git reset HEAD <file>` - Used to unstage file. 
+
+22.`git reset HEAD <file>` - Used to unstage file. 
+23. `git restore <file>` - It is used to revert file back to what it looked when you commited
