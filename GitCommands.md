@@ -24,7 +24,7 @@
    - git add README
 1. `git reset HEAD <file>` - Used to unstage file.
 1. `git restore --staged <file>` - It is used to revert file back to what it looked when you commited. It’s important to understand that `git restore -- <file>` is a dangerous command. Any local changes you made to that file are gone — Git just replaced that file with the last staged or committed version. Don’t ever use this command unless you absolutely know that you don’t want those unsaved local changes.`--stagged` is used to unstagged the file.
-1. `git remote <add:name> -v` - To see which remote servers you have configured, you can run the git remote command. shows the url of the remote.`add` is used to add new remote expliictly.`-v`shows you the URLs that Git has stored for the shortname to be used
+1. `git remote add origin <url> -v` - To see which remote servers you have configured, you can run the git remote command. shows the url of the remote.`add` is used to add new remote expliictly.`-v`shows you the URLs that Git has stored for the shortname to be used
    when reading and writing to that remote
 1. `git fetch <remote>`- The command goes out to that remote project and pulls down all the data from that remote project that you don’t have yet.`git fetch origin` fetches any new work that has been pushed to that server since you cloned (or last fetched from) it. `git fetch` command 1.1.only downloads1.1. the data to your local repository — it 1.1.doesn’t automatically merge1.1. it with any of your work or modify what you’re currently working on.
 1. `git pull`- command to 1.1.automatically fetch1.1. and 1.1.then merge1.1. that remote branch into your current branch.
