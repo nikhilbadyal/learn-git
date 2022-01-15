@@ -95,7 +95,8 @@ changes you forgot, stage them, and commit again using the --amend option. The c
 
 23.`git restore --staged <file>` - It is used to revert file back to what it looked when you commited. It’s important to understand that `git restore -- <file>` is a dangerous command. Any local changes you made to that file are gone — Git just replaced that file with the last staged or committed version. Don’t ever use this command unless you absolutely know that you don’t want those unsaved local changes.`--stagged` is used to unstagged the file.
 
-24.`git remote add -v` - To see which remote servers you have configured, you can run the git remote command. shows the url of the remote.`add` is used to add new remote expliictly.
+24.`git remote add -v` - To see which remote servers you have configured, you can run the git remote command. shows the url of the remote.`add` is used to add new remote expliictly.`-v`shows you the URLs that Git has stored for the shortname to be used
+when reading and writing to that remote
 
 25.`git fetch <remote>`- The command goes out to that remote project and pulls down all the data from that remote project
 that you don’t have yet.`git fetch origin` fetches any new work that has been pushed to that server since you
